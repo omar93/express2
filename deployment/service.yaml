@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: <your-service-name>
+  name: express-service
 spec:
   selector:
-    app: <your-app-name>
+    app: express-app
   ports:
     - name: http
       port: 80
