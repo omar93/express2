@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: express-deployment
-  namespace: argocd
+  namespace: omar
 spec:
   project: default
   source:
