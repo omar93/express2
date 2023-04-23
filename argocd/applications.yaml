@@ -4,7 +4,7 @@ metadata:
   name: express-deployment
   namespace: omar
 spec:
-  project: default
+  project: express-project
   source:
     repoURL: https://github.com/omar93/express
     path: ../deployment
