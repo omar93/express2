@@ -6,14 +6,14 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/<your-github-username>/<your-repo-name>.git
+    repoURL: https://github.com/omar93/express.git
     path: overlays/default
     targetRevision: HEAD
     kustomize:
       namePrefix: express-
   destination:
     server: https://kubernetes.default.svc
-    namespace: <your-desired-namespace>
+    namespace: omar
   syncPolicy:
     automated:
       prune: true
