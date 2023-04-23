@@ -1,20 +1,20 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: express-app-of-apps
-  namespace: argocd
-spec:
-  project: default
-  source:
-    repoURL: https://github.com/omar93/express
-    path: deployment
-    targetRevision: HEAD
-  destination:
-    server: https://kubernetes.default.svc
-    namespace: omar
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-    syncOptions:
-      - CreateNamespace=true
+# apiVersion: argoproj.io/v1alpha1
+# kind: Application
+# metadata:
+#   name: express-app-of-apps
+#   namespace: argocd
+# spec:
+#   project: default
+#   source:
+#     repoURL: https://github.com/omar93/express
+#     path: deployment
+#     targetRevision: HEAD
+#   destination:
+#     server: https://kubernetes.default.svc
+#     namespace: omar
+#   syncPolicy:
+#     automated:
+#       prune: true
+#       selfHeal: true
+#     syncOptions:
+#       - CreateNamespace=true
