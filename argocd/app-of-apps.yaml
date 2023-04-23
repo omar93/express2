@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/<your-github-username>/<your-repo-name>.git
-    path: k8s-manifests
+    repoURL: https://github.com/omar93/express
+    path: deployment
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
-    namespace: <your-desired-namespace>
+    namespace: omar
   syncPolicy:
     automated:
       prune: true
