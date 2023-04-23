@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/omar93/express
-    path: deployment
+    path: ../deployment
     targetRevision: HEAD
     directory:
       recurse: true
