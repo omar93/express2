@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: express-app-container
-          image: omaralhamad/express:latest
+          image: express-app:latest
           ports:
             - containerPort: 3000
           livenessProbe:

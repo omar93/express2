@@ -1,0 +1,20 @@
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+  name: express-app
+spec:
+  failedBuildsHistoryLimit: 1
+  successfulBuildsHistoryLimit: 1
+  output:
+    to:
+      kind: ImageStreamTag
+      name: express-app:latest
+  source:
+    type: Git
+    git:
+      uri: https://github.com/omar93/express2.git
+      ref: openshift
+  strategy:
+    dockerStrategy:
+      dockerfilePath: Dockerfile.ui
+    type: Docker
