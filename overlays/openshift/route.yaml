@@ -6,8 +6,6 @@ spec:
   to:
     kind: Service
     name: express-service
-    weight: 100
   port:
     targetPort: http
-  tls:
-    termination: edge
+
