@@ -4,7 +4,7 @@ metadata:
   name: express-service
 spec:
   selector:
-    app: express-app
+    app: express-app2
   ports:
     - name: http
       port: 80

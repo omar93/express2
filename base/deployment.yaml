@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: express-app
+  name: express-app2
 spec:
   selector:
     matchLabels:
-      app: express-app
+      app: express-app2
   replicas: 1
   template:
     metadata:
       labels:
-        app: express-app
+        app: express-app2
     spec:
       containers:
-        - name: express-app-container
+        - name: express-app2-container
           image: express-app:latest
           ports:
             - containerPort: 3000
